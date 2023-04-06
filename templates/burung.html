@@ -1,0 +1,450 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deteksi Burung</title>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">      
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+    <a class="navbar-brand" href="/">Deteksi Burung</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/burung">Jenis Burung</a>
+        </li>
+
+      </ul>
+    </div>
+</div>
+  </nav>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Daftar Spesies Burung</h1>
+    <p class="lead">30 jenis burung yang ada di Maluku </p> 
+    <p>Untuk melihat data lengkap mengenai spesies burung yang ada di Maluku kunjungi 
+      <a href="https://avibase.bsc-eoc.org/checklist.jsp?lang=ID&p2=1&list=obc&synlang=ID&region=IDmama&version=images&lifelist=&highlight=0">Avibase</a> atau
+      <a href="https://ebird.org/region/ID-MA-MA?yr=all">eBird</a>
+      </p>
+  </div>
+</div>
+
+<!-- Row 1 -->
+<div class="container">
+
+<div class="row">
+<div class="mt-3">
+<div class="card" style="width: 15rem;">
+  <img src="{{ url_for('static', filename='img/1.jpg') }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Alap-alap kawah</h5>
+    <i class="card-text">Falco peregrinus</i>
+
+  </div>
+</div>
+</div>
+
+<div class="ml-3 mt-3">
+<div class="card" style="width: 15rem;">
+  <img src="{{ url_for('static', filename='img/2.jpg') }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Angsa-batu christmas</h5>
+    <i class="card-text">Papasula abbotti</i>
+  </div>
+</div>
+
+</div>
+<div class="ml-3 mt-3">
+<div class="card" style="width: 15rem;">
+  <img src="{{ url_for('static', filename='img/3.jpg') }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Angsa-batu topeng</h5>
+    <i class="card-text">Sula dactylatra</i>
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Row 2 -->
+<div class="container">
+
+<div class="row">
+<div class="mt-3">
+<div class="card" style="width: 15rem;">
+  <img src="{{ url_for('static', filename='img/4.jpg') }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Belibis totol</h5>
+    <i class="card-text">Dendrocygna guttata</i>
+
+  </div>
+</div>
+</div>
+
+<div class="ml-3 mt-3">
+<div class="card" style="width: 15rem;">
+  <img src="{{ url_for('static', filename='img/5.jpg') }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Biru-laut ekor-blorok</h5>
+    <i class="card-text">Limosa lapponica</i>
+  </div>
+</div>
+
+</div>
+<div class="ml-3 mt-3">
+<div class="card" style="width: 15rem;">
+  <img src="{{ url_for('static', filename='img/6.jpg') }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Boha wasur</h5>
+    <i class="card-text">Anseranas semipalmata</i>
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--  Row 3 -->
+<div class="container">
+
+  <div class="row">
+  <div class="mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/7.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Buntut-sate putih</h5>
+      <i class="card-text">Phaethon lepturus</i>
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/8.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Burung-kucing tutul</h5>
+      <i class="card-text">Ailuroedus melanotis</i>
+    </div>
+  </div>
+  
+  </div>
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/9.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Camar-angguk cokelat</h5>
+      <i class="card-text">Anous stolidus</i>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>    
+
+<!--  Row 4 -->
+<div class="container">
+
+  <div class="row">
+  <div class="mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/10.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Camar-kejar pomarin</h5>
+      <i class="card-text">Stercorarius pomarinus</i>
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/11.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cerek besar</h5>
+      <i class="card-text">Pluvialis squatarola</i>
+    </div>
+  </div>
+  
+  </div>
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/12.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cikalang besar</h5>
+      <i class="card-text">Fregata minor</i>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+<!--  Row 5 -->
+<div class="container">
+
+  <div class="row">
+  <div class="mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/13.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cinenen gunung</h5>
+      <i class="card-text">Phyllergates cucullatus</i>
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/14.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Dara-laut kaspia</h5>
+      <i class="card-text">Hydroprogne caspia</i>
+    </div>
+  </div>
+  
+  </div>
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/15.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Elang tiram</h5>
+      <i class="card-text">Pandion haliaetus</i>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+<!--  Row 6 --> 
+<div class="container">
+
+  <div class="row">
+  <div class="mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/16.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Gajahan penggala</h5>
+      <i class="card-text">Numenius phaeopus</i>
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/17.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ibis rokoroko</h5>
+      <i class="card-text">Plegadis falcinellus</i>
+    </div>
+  </div>
+  
+  </div>
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/18.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Junai emas</h5>
+      <i class="card-text">Caloenas nicobarica</i>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+<!--  Row 7 -->
+<div class="container">
+
+  <div class="row">
+  <div class="mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/19.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Kareo padi</h5>
+      <i class="card-text">Amaurornis phoenicurus</i>
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/20.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Kasuari gelambir-ganda</h5>
+      <i class="card-text">Casuarius casuarius</i>
+    </div>
+  </div>
+  
+  </div>
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/21.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Kedidi leher-merah</h5>
+      <i class="card-text">Calidris ruficollis</i>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+<!--  Row 8 -->
+<div class="container">
+
+  <div class="row">
+  <div class="mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/22.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Kedidir belang</h5>
+      <i class="card-text">Haematopus longirostris</i>
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/23.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Layang-layang asia</h5>
+      <i class="card-text">Hirundo rustica</i>
+    </div>
+  </div>
+  
+  </div>
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/24.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pecuk-ular australasia</h5>
+      <i class="card-text">Anhinga novaehollandiae</i>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+<!--  Row 9 -->
+<div class="container">
+
+  <div class="row">
+  <div class="mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/25.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Perkici pelangi</h5>
+      <i class="card-text">Trichoglossus haematodus</i>
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/26.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Perkutut jawa</h5>
+      <i class="card-text">Geopelia striata</i>
+    </div>
+  </div>
+  
+  </div>
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/27.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pipit benggala</h5>
+      <i class="card-text">Amandava amandava</i>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+<!--  Row 10 -->
+<div class="container">
+
+  <div class="row">
+  <div class="mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/28.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Serak jawa</h5>
+      <i class="card-text">Tyto alba</i>
+
+    </div>
+  </div>
+  </div>
+  
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/29.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tikusan alis-putih</h5>
+      <i class="card-text">Poliolimnas cinereus</i>
+    </div>
+  </div>
+  
+  </div>
+  <div class="ml-3 mt-3">
+  <div class="card" style="width: 15rem;">
+    <img src="{{ url_for('static', filename='img/30.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Trulek topeng</h5>
+      <i class="card-text">Vanellus miles</i>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+
+
+</body>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+<footer class="mt-4 ngisor">
+<div class="container">
+          <span class="text-muted">DETEKSI JENIS BURUNG DI MALUKU MENGGUNAKAN CNN (CONVOLUTIONAL NEURAL NETWORK) BERBASIS WEB</span>
+        </div>
+</footer>

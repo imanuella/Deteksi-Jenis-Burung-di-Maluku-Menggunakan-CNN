@@ -1,0 +1,8 @@
+flask
+tensorflow
+gevent
+flask-sqlalchemy
+flask-security
+pytz
+email_validator
+pillow
