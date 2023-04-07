@@ -1,5 +1,5 @@
 # Deteksi-Jenis-Burung-di-Maluku-Menggunakan-CNN
-
+<img src="Demo.gif" alt="Demo" width="500"/>
 Deteksi jenis burung di Maluku menggunakan convolutional neural network (CNN) dan flask-security.
 
 ## Dataset
