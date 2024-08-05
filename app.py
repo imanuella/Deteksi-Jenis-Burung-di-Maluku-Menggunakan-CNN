@@ -22,7 +22,7 @@ from flask_security import Security, SQLAlchemyUserDatastore, login_required, \
 from flask_security.utils import hash_password
 
 
-# Define a flask app
+# flask app
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'thisisasecret'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
@@ -56,7 +56,7 @@ security = Security(app, user_datastore)
 
 
 
-# Load your trained model
+# Load model
 MODEL_PATH = 'bento_nodrop.h5'
 model = load_model(MODEL_PATH)   
 print('Model loaded. Check http://127.0.0.1:5000/')
@@ -68,7 +68,7 @@ lab = {0 : 'ALAP-ALAP KAWAH', 1 : 'ANGSA-BATU CHRISTMAS', 2 : 'ANGSA-BATU TOPENG
 def model_predict(img_path, model):
     img = load_img(img_path, target_size=(224, 224))
 
-    # Preprocessing the image
+    # Preprocessing image
     x = img_to_array(img)
     x = np.expand_dims(x, axis=0)
     x = preprocess_input(x, mode='caffe')
@@ -93,7 +93,7 @@ def upload():
         # Make prediction
         preds = model_predict(file_path, model)
 
-        # Process your result for human
+        # Process result
         pred_class = preds.argmax(axis=-1)
         print(pred_class)
         y = " ".join(str(x) for x in pred_class)
